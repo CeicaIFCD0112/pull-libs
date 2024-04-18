@@ -5,7 +5,7 @@
     
     <!-- Estilos de Bootstrap -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" href="/assets/img/icono.ico" type="image/x-icon">
+    <link rel="icon" type="image/jpg" href="/assets/img/fav-ico.jpg"/>
     <style>
         /* Estilo adicional para los formularios */
         .form-container {
