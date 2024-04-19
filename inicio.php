@@ -34,7 +34,6 @@
                     <th>ID</th>
                     <th>Película</th>
                     <th>Serie</th>
-                    <th>Cortos</th>
                     <th>Favoritos</th>
                     <th>URL</th>
                 </tr>
@@ -65,8 +64,7 @@
                         echo "<td>" . $row["id"] . "</td>";
                         echo "<td>" . $row["pelicula"] . "</td>";
                         echo "<td>" . $row["serie"] . "</td>";
-                        echo "<td>" . $row["corto"] . "</td>";
-                        echo "<td>" . $row["favs"] . "</td>";
+                        echo "<td>" . $row["favoritos"] . "</td>";
                         echo "<td>" . $row["url"] . "</td>";
                         echo "</tr>";
                     }
@@ -121,7 +119,7 @@
                         echo "<td>" . $row["titulo"] . "</td>";
                         echo "<td>" . $row["genero"] . "</td>";
                         echo "<td>" . $row["social"] . "</td>";
-                        echo "<td>" . $row["favs"] . "</td>";
+                        echo "<td>" . $row["favoritos"] . "</td>";
                         echo "<td>" . $row["url"] . "</td>";
                         echo "</tr>";
                     }
@@ -247,13 +245,13 @@
         </div>
     </div>
 
-    <!-- Script para borrar datos -->
     <script>
-        function borrarDatos() {
-            // Aquí puedes agregar el código para borrar los datos guardados
-            alert("Borrando datos...");
-        }
-    </script>
+    function borrarDatos() {
+        // Aquí puedes agregar el código para borrar los datos guardados
+        // Redirigir a la página de borrado de datos
+        window.location.href = "pagina_de_borrado.php"; // Reemplaza "pagina_de_borrado.php" con la URL de tu página de borrado
+    }
+</script>
 </body>
   <!-- Agrega los enlaces a Bootstrap JS (opcional, si necesitas funcionalidades adicionales de Bootstrap) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

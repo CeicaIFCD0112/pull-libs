@@ -29,6 +29,7 @@
                         <input type="password" name="contrasena" class="form-control" id="password" placeholder="Contraseña" required>
                     </div>
                     <button type="submit" class="btn btn-primary">Registrarse</button>
+                    <a href="inicio.php" class="btn btn-primary">Inicio</a>
                 </form>
             </div>
         </div>
@@ -53,7 +54,7 @@
     //$contrasena_encriptada = password_hash($password, PASSWORD_DEFAULT);
 
     // Insertar datos en la base de datos
-    $query = "INSERT INTO user (nombre, mail, pasword) VALUES ('$nombre', '$mail', '$password')";
+    $query = "INSERT INTO user (nombre, mail, password) VALUES ('$nombre', '$mail', '$password')";
     $resultado = mysqli_query($conexion, $query);
 
     if ($resultado) {

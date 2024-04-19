@@ -53,7 +53,7 @@
     $password = $_POST['contrasena'];
 
     // Buscar usuario en la base de datos
-    $query = "SELECT * FROM user WHERE nombre='$nombre' and pasword='$password'";
+    $query = "SELECT * FROM user WHERE nombre='$nombre' AND password='$password'";
     $resultado = mysqli_query($conexion, $query);
 
     if ($fila = mysqli_fetch_assoc($resultado)) {
